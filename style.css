@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+* {
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Attributes Styling */
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Sections Styling */
+
+.bg-images img {
+    width: 50%;
+}
+
+#img-1 {
+    position: absolute;
+    top: 0px;
+    left: -150px;
+}
+
+#img-2 {
+    position: absolute;
+    left: 550px;
+    bottom: 0px;
+}
+
+
+/* Main Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 20px 20px;
+}
+
+.section-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 1150px;
+    margin: auto;
+}
+
+.section-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 0 10px;
+    /* border: 2px solid black; */
+}
+
+.hero-section h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 55px;
+}
+
+.hero-section p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* Rating Section */
+
+.rating-section {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+    height: 250px;
+}
+
+
+/* Rate Card */
+
+.rate-card {
+    background-color: hsl(300, 24%, 96%);
+    margin: 10px;
+    padding: 5px 45px 5px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+}
+
+.rate-card h2 {
+    color: hsl(300, 43%, 22%);
+    font-size: 17px;
+}
+
+
+/* Review Section */
+
+.review-section {
+    height: 300px;
+    width: 1150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rc-1 {
+    align-self: flex-start;
+}
+
+.rc-2 {
+    align-self: center;
+}
+
+.rc-3 {
+    align-self: flex-end;
+}
+
+
+/* Review Card */
+
+.review-card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7.5px;
+    padding: 30px 35px 30px 35px;
+    margin: 0 20px;
+    width: 341px;
+    box-sizing: border-box;
+}
+
+.review-card img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.review-card h3 {
+    color: hsl(0, 0%, 100%);
+}
+
+.review-card h4 {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.review-card p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 15.5px;
+    margin: 25px 0 3px 0px;
+    line-height: 1.25;
+}
+
+
+/* Heading Section Under Review Card */
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+
+/* Text Area in Heading Section */
+
+.text-area {
+    padding: 0 25px;
+}
+
+.text-area h3 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.text-area h4 {
+    font-weight: 17px;
+    margin: 0;
+}
+
+#mobile {
+    display: none;
+}
+
+@media (max-width:375px) {
+    main {
+        width: 350px;
+        margin: 0;
+        padding: 0;
+    }
+    .section-up {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .section-down {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .hero-section {
+        text-align: center;
+    }
+    .hero-section p {
+        margin: 0 1px;
+    }
+    .rate-card {
+        flex-direction: column;
+        padding: 0;
+        padding: 10px 0 0 0;
+        width: 350px;
+    }
+    .review-section {
+        flex-direction: column;
+        width: 350px;
+        height: auto;
+        margin: 0 25px;
+    }
+    .rc-1 {
+        align-self: center;
+    }
+    .rc-2 {
+        align-self: center;
+    }
+    .rc-3 {
+        align-self: center;
+    }
+    .review-card {
+        margin: 10px auto;
+    }
+    .rating-section {
+        width: auto;
+        height: auto;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    #img-3 {
+        position: absolute;
+        left: 50px;
+        top: 0px;
+    }
+    #img-4 {
+        position: absolute;
+        bottom: 0;
+        left: 200px;
+    }
+}
